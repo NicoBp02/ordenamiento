@@ -51,6 +51,8 @@ while (j >= 0 && v[j] > clave) {
             v[j + 1] = v[j];
             j--;
 }
+v[j + 1] = clave;
 }
 }
+  
 }
