@@ -10,16 +10,17 @@ public class Ordenamiento {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
-        System.out.print("¿Cuántos números deseas ingresar?: ");
+        System.out.print("¿Cuantos números deseas ingresar?: ");
         int n = sc.nextInt();
         int[] arr = new int[n];
         ordenar(arr);
         for (int i = 0; i < n; i++) {
-            System.out.print("Ingresa el valor para la posición " + (i + 1) + ": ");
+            System.out.print("Ingresa el valor para la posicion " + (i + 1) + ": ");
             arr[i] = sc.nextInt();
         }
         ordenar(arr);
         System.out.println("Arreglo ordenado: " + java.util.Arrays.toString(arr));
+        sc.close();
     }
 
     
