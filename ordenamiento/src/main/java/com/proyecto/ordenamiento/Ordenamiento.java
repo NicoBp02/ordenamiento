@@ -14,9 +14,16 @@ public class Ordenamiento {
         int n = sc.nextInt();
         int[] arr = new int[n];
         ordenar(arr);
-        System.out.println(java.util.Arrays.toString(arr));
+        for (int i = 0; i < n; i++) {
+            System.out.print("Ingresa el valor para la posición " + (i + 1) + ": ");
+            arr[i] = sc.nextInt();
+        }
+        ordenar(arr);
+        System.out.println("Arreglo ordenado: " + java.util.Arrays.toString(arr));
     }
 
+    
+    
     private static void ordenar(int v[]) {
         // i llega hasta el penúltimo elemento
         for (int i = 0; i < v.length - 1; i++) {
