@@ -47,7 +47,10 @@ for (int i = 0; i < n; i++) {
     for (int i = 1; i < v.length; i++) {
         int clave = v[i]; 
         int j = i - 1;
-
-
+while (j >= 0 && v[j] > clave) {
+            v[j + 1] = v[j];
+            j--;
+}
+}
 }
 }
