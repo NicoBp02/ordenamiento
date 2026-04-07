@@ -4,9 +4,15 @@
 
 package com.proyecto.ordenamiento;
 
+import java.util.*;
+
 public class Ordenamiento {
     public static void main(String[] args) {
-        int arr[] = {5, 2, 11, -8, 115, 56, -3};
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("¿Cuántos números deseas ingresar?: ");
+        int n = sc.nextInt();
+        int[] arr = new int[n];
         ordenar(arr);
         System.out.println(java.util.Arrays.toString(arr));
     }
