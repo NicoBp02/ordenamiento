@@ -10,7 +10,7 @@ public class Ordenamiento {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Random rand = new Random();
-        System.out.print("¿Cuantos numeros deseas ingresar?: ");
+        System.out.print("Cuantos numeros deseas ingresar?: ");
         int n = sc.nextInt();
         int[] arr = new int[n];
 
@@ -25,7 +25,8 @@ for (int i = 0; i < n; i++) {
     }
 
     
-    
+    //metodo burbuja 
+    /*
     private static void ordenar(int v[]) {
         // i llega hasta el penúltimo elemento
         for (int i = 0; i < v.length - 1; i++) {
@@ -40,4 +41,13 @@ for (int i = 0; i < n; i++) {
             }
         }
     }
+    */
+       //metodo por incersion
+  private static void ordenar(int v[]) {
+    for (int i = 1; i < v.length; i++) {
+        int clave = v[i]; 
+        int j = i - 1;
+
+
+}
 }
