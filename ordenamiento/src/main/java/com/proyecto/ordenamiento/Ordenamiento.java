@@ -9,14 +9,13 @@ import java.util.*;
 public class Ordenamiento {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        
-        System.out.print("¿Cuantos números deseas ingresar?: ");
+        Random rand = new Random();
+        System.out.print("¿Cuantos numeros deseas ingresar?: ");
         int n = sc.nextInt();
         int[] arr = new int[n];
-     for (int i = 0; i < n; i++) {
-            System.out.print("Ingresa el valor para la posicion " + (i + 1) + ": ");
-            arr[i] = sc.nextInt();    
-        }
+
+
+        
         ordenar(arr);
        System.out.println("Arreglo ordenado: " + java.util.Arrays.toString(arr));
         sc.close();
